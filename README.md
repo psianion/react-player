@@ -9,7 +9,7 @@ In this project, we have used:
 The project is built with basic ReactJS along with HTML, Sass and JavaScript.<br />
 You can read the [React Documentation](https://reactjs.org/) to learn more about this JavaScript Library.
 
-##Screenshots :
+## Screenshots :
 
 ![](public/screenshot/Screenshot1.PNG)
 ![](public/screenshot/Screenshot2.PNG)
