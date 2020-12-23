@@ -5,7 +5,7 @@ import {
   faAngleLeft,
   faAngleRight,
   faPause,
-  faVolumeDown,
+  faVolumeUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { playAudio } from "../util";
@@ -130,6 +130,20 @@ const Player = ({
           icon={faAngleRight}
           onClick={() => skipTrackHandler("skip-forward")}
         />
+        <FontAwesomeIcon
+          onClick={() => setActiveVolume(!activeVolume)}
+          icon={faVolumeUp}
+        />
+        {activeVolume && (
+          <input
+            onChange={changeVolume}
+            value={songInfo.volume}
+            max="1"
+            min="0"
+            step="0.01"
+            type="range"
+          />
+        )}
       </div>
     </div>
   );
